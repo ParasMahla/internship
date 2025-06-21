@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const calc_amount=()=>
+  {
+    let q=document.getElementById("qu").value;
+
+    let price=document.getElementById("pr").value;
+
+    let amount=q*price;
+    document.getElementById("amount").value=amount
+
+  }
+  </script>
+</head>
+<body>
+  
+<table border="1" align="center" cellspacing="0" cellpadding="10">
+    <tr>
+      <td>Quantity</td>
+      <td><input type="=text" id="qu"></td>
+      </tr>
+      <tr>
+      <td>price</td>
+      <td><input type="text" id="pr"></td>
+      </tr>
+      <tr>
+      <td>Amount</td>
+      <td><input type="text"  id="amount"onfocus="calc_amount()"></td>
+      </tr>  
+
+    </tr>
+
+
+</table>
+
+
+</body>
+</html>
