@@ -1,0 +1,63 @@
+<!--*21/10/2023
+ * This HTML document contains a form with validation for the user name field.
+ * If the user name is empty, an alert will be shown and the form will not submit.
+ * The form includes fields for user name, password--> 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const vali=()=>{
+            let name=document.myform.nm.value;
+            if(name==""){
+                alert("enter user name");
+                return false;
+            }
+            if(password=="")
+            {
+                alert("enter password");
+                return false;
+            }
+            if(gender==)
+            {
+              alert("select Gender");
+              return false; 
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="aa.html" onsubmit="return vali()">
+        <table border="1" align="center" cellspacing="0" cellpadding="10">
+        <tr>
+            <td>User Name</td>
+            <td>
+                <input type="text" name="nm" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" name="pass" value=""/>
+            </td>
+        </tr>
+        <tr>
+            <td> Gender </td>
+            <td>
+                <input type="radio" name="r1" value="Male"> Male 
+                <input type="radio" name="r2" value="Female"> Female 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="send"/>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
